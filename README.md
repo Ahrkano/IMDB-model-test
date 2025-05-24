@@ -91,11 +91,6 @@ Gráfico mostrando a quantidade de exemplos para cada tipo de rótulo fraco (pos
 
 ---
 
-> **Dica:** Para incluir essas imagens no seu repositório, use `plt.savefig('figures/nome_do_arquivo.png')` para salvar as figuras durante a execução do notebook, crie a pasta `figures` e faça o upload dela no GitHub junto com o README.md.
-
-
----
-
 Se você quiser rodar o projeto, é só instalar as versões indicadas no notebook e executar as células na ordem.
 
 Espero que esse projeto ajude quem quer entender como lidar com dados ruidosos e rotulagem fraca em NLP!
