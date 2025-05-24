@@ -114,6 +114,22 @@ clf = joblib.load("artefatos/classifier.joblib")
 # Carrega as métricas salvas
 report_df = pd.read_csv("artefatos/metricas_cleanlab.csv", index_col=0)
 
-
+```
 ---
+
+## Dataset Utilizado
+
+Este projeto utiliza o dataset **IMDB Movie Reviews**, amplamente utilizado em tarefas de classificação de sentimentos. Ele contém avaliações reais de filmes extraídas do site IMDb, rotuladas como **positivas** ou **negativas**.
+
+### 🔗 Fonte oficial:
+- [Hugging Face Datasets - IMDB](https://huggingface.co/datasets/imdb)
+
+### Estrutura do Dataset:
+- `train`: 25.000 exemplos rotulados para treino
+- `test`: 25.000 exemplos rotulados para teste
+- `unsupervised`: 50.000 exemplos sem rótulo (não utilizado neste projeto)
+
+
+
+
 
