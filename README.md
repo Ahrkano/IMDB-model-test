@@ -47,6 +47,53 @@ O objetivo principal foi experimentar técnicas de rotulagem fraca (weak supervi
 - `numpy` — manipulação numérica
 - `joblib` — para salvar modelos (se aplicável)
 
+- ## Visualizações e Gráficos
+
+Durante o desenvolvimento do projeto, alguns gráficos importantes foram gerados para analisar os resultados e o desempenho dos modelos. A seguir, os principais gráficos:
+
+### 1. Comparação de Métricas: PU Learning vs Cleanlab
+
+Gráfico de barras comparando as métricas de precisão (Precision) e revocação (Recall) dos modelos baseados em PU Learning e Cleanlab para os rótulos "Negativo" e "Positivo".
+
+![Comparação PU vs Cleanlab](imagens/PUvsCL.png)
+
+---
+
+### 2. Matriz de Confusão (CleanLab)
+
+Essa matriz compara os rótulos verdadeiros com as predições do modelo treinado com CleanLab, ajudando a identificar erros de classificação.
+
+![Matriz de Confusão (CleanLab)](imagens/MCCL.png)
+
+---
+
+### 3. Matriz de Confusão (PU Learning)
+
+Mostra o desempenho do classificador baseado em PU Learning, comparando rótulos verdadeiros e predições feitas pelo modelo.
+
+![Matriz de Confusão (PU Learning)](imagens/MCPU.png)
+
+---
+
+### 4. Cobertura das Labeling Functions (Snorkel)
+
+Gráfico que apresenta a proporção de exemplos cobertos por cada Labeling Function utilizada para gerar os rótulos fracos, permitindo avaliar sua contribuição.
+
+![Cobertura das Labeling Functions](imagens/LF.png)
+
+---
+
+### 5. Distribuição dos Rótulos Fracos
+
+Gráfico mostrando a quantidade de exemplos para cada tipo de rótulo fraco (positivo, negativo e abstain), evidenciando o balanceamento dos dados utilizados.
+
+![Distribuição dos Rótulos Fracos](imagens/DRF.png)
+
+---
+
+> **Dica:** Para incluir essas imagens no seu repositório, use `plt.savefig('figures/nome_do_arquivo.png')` para salvar as figuras durante a execução do notebook, crie a pasta `figures` e faça o upload dela no GitHub junto com o README.md.
+
+
 ---
 
 Se você quiser rodar o projeto, é só instalar as versões indicadas no notebook e executar as células na ordem.
