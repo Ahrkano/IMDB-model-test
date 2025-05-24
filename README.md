@@ -91,9 +91,29 @@ Gráfico mostrando a quantidade de exemplos para cada tipo de rótulo fraco (pos
 
 ---
 
-Se você quiser rodar o projeto, é só instalar as versões indicadas no notebook e executar as células na ordem.
+## Exportando Artefatos e Resultados
 
-Espero que esse projeto ajude quem quer entender como lidar com dados ruidosos e rotulagem fraca em NLP!
+Durante o desenvolvimento, alguns arquivos importantes foram gerados e salvos na pasta `artefatos/`, permitindo que os modelos e métricas possam ser reutilizados futuramente sem a necessidade de reprocessamento:
+
+- `vectorizer.joblib`: Vetorizador TF-IDF treinado.
+- `classifier.joblib`: Classificador treinado com Cleanlab.
+- `metricas_cleanlab.csv`: Métricas de avaliação salvas em formato CSV.
+
+Esses arquivos podem ser carregados da seguinte forma:
+
+```python
+import joblib
+import pandas as pd
+
+# Carrega o vetorizador TF-IDF
+vectorizer = joblib.load("artefatos/vectorizer.joblib")
+
+# Carrega o classificador treinado
+clf = joblib.load("artefatos/classifier.joblib")
+
+# Carrega as métricas salvas
+report_df = pd.read_csv("artefatos/metricas_cleanlab.csv", index_col=0)
+
 
 ---
 
